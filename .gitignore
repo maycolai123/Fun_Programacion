@@ -16,4 +16,7 @@ properties/
 obj/
 bin/
 .vs/
+*.config
+*.csproj
+*.slnx
 
