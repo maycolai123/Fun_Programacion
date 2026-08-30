@@ -44,6 +44,9 @@ namespace Fundamentos
             // ejecutar un programa visual estudio code
             dotnet run 
 
+        
+
         }
     }
 }
+
