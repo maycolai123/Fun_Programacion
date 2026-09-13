@@ -42,8 +42,22 @@ namespace Estructuras_de_control
                 case 3: Console.WriteLine("opcion 3"); break;
                 default: Console.WriteLine("opcion invalido"); break;
             }
+            // anidado
 
+            if (opcion == 1)
+            {
+                Console.WriteLine("opcion 1");
 
+            }
+            else if (opcion == 2)
+            {
+                Console.WriteLine("opc 2");
+
+            }
+            else if (opcion == 3)
+            {
+                Console.WriteLine("opc 3");
+            }
 
             }
     }
