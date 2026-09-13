@@ -65,14 +65,31 @@ static double proceso_compra(double monto)
 double venta = proceso_compra(550);
 Console.WriteLine($"total a pagar s/. {venta}");
 
+//funciones con parametros por valor
+//--------------------------------
 
+static void incrementar(int numero)
+{
+    numero = numero + 5;
+    Console.WriteLine($"dentro de la funcion: {numero}");
+}
 
+int z=25;
+incrementar(z);
+Console.WriteLine($"fuera de la funcion: {z}");
 
+//funciones con parametros por refderencia
+//--------------------------------
 
+static void incrementar_referencia(ref int numero)
+{
+    numero = numero+10;
+    Console.WriteLine($"dentro de la funcion: {numero}");
+}
 
-
-
-
+int y =30;
+incrementar_referencia(ref y);
+ Console.WriteLine($"fuera de la funcion: {y}");
 
 
 
