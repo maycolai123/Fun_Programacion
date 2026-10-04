@@ -41,6 +41,7 @@ mostar primer y ultimo caracter del codigo
 recorrer ada letra de la carrera 
 crear una etiqueta nueva agregando el semestre sin alterar la original
 """
+"""
 codigo = input("ingrese su codigo: ")
 carrera = input("ingrese su carrera: ")
 
@@ -92,6 +93,59 @@ for i in range(len(carrera)):
 etiqueta_nueva = etiqueta + " - Ciclo " + semestre
 print(f"Etiqueta original (sin alterar): {etiqueta}")
 print(f"Etiqueta nueva con semestre: {etiqueta_nueva}")  
+"""
+print("metodos para trabajar con cadenas")
+# find
+#slicing
+#split
+
+nombre = "pancho,quizpe"
+posicion_coma = nombre.find(",")
+
+print(f'la poscion de la comna es: {posicion_coma}')
+
+
+#slicing
+email= "pancho.quizpe@unc.pe"
+posicion_arroba= email.find("@")
+usuario = email[:posicion_arroba]
+dominio = email[posicion_arroba +1:]
+print(f'usuario: {usuario}')
+print(f'dominio: {dominio}')
+
+#split
+nombre_curso = "bigData y base de datos avanzada"
+partes = nombre_curso.split(" ")
+print(partes)
+print(partes[0])
+print(partes[1])
+print(partes[2])
+print(partes[3])
+print(partes[4])
+print(partes[5])
+
+
+#replace
+telefono = "+51-987-654-321"
+telefono_clean = telefono.replace("-", ".")
+print(f'telefono_clean: {telefono_clean}')
+
+#upper
+nombre_mayuscula = nombre.upper()
+print(nombre_mayuscula)
+
+#lower
+nombre_minuscula = nombre.lower()
+print(nombre_minuscula)
+
+#strip
+palabra = "     arpe  poe"
+palabra_limpia = palabra.strip()
+
+print(f'{palabra_limpia}')
+
+
+
 
 
 
