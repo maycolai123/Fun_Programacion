@@ -41,4 +41,3 @@ print(ordenado)
 print("usasndo reverse")
 edades.sort(reverse=True)
 print(edades)
-
