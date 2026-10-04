@@ -38,6 +38,7 @@ ordenado = sorted(edades)
 print(edades)
 print(ordenado)
 
-print("usasndo reversa")
+print("usasndo reverse")
 edades.sort(reverse=True)
 print(edades)
+
